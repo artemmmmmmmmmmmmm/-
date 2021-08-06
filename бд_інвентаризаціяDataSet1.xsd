@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="бд_інвентаризаціяDataSet1" targetNamespace="http://tempuri.org/бд_інвентаризаціяDataSet1.xsd" xmlns:mstns="http://tempuri.org/бд_інвентаризаціяDataSet1.xsd" xmlns="http://tempuri.org/бд_інвентаризаціяDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="бд_інвентаризаціяConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="бд_інвентаризаціяConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Інформаційна_система_з_технічного_обліку.Properties.Settings.GlobalReference.Default.бд_інвентаризаціяConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="журнал_обладнанняTableAdapter" GeneratorDataComponentClassName="журнал_обладнанняTableAdapter" Name="журнал_обладнання" UserDataComponentName="журнал_обладнанняTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="бд_інвентаризаціяConnectionString (Settings)" DbObjectName="`бд_інвентаризація`.`журнал_обладнання`" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idПереміщення`, `Дата_оренди`, `idМатеріально_відповідального`, `idТипу_операції`, `Ідентифікаційний_номер_техніки`, `idДжерела` FROM `журнал_обладнання`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="бд_інвентаризаціяDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="бд_інвентаризаціяDataSet1" msprop:Generator_UserDSName="бд_інвентаризаціяDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="журнал_обладнання" msprop:Generator_TableClassName="журнал_обладнанняDataTable" msprop:Generator_TableVarName="tableжурнал_обладнання" msprop:Generator_TablePropName="журнал_обладнання" msprop:Generator_RowDeletingName="журнал_обладнанняRowDeleting" msprop:Generator_RowChangingName="журнал_обладнанняRowChanging" msprop:Generator_RowEvHandlerName="журнал_обладнанняRowChangeEventHandler" msprop:Generator_RowDeletedName="журнал_обладнанняRowDeleted" msprop:Generator_UserTableName="журнал_обладнання" msprop:Generator_RowChangedName="журнал_обладнанняRowChanged" msprop:Generator_RowEvArgName="журнал_обладнанняRowChangeEvent" msprop:Generator_RowClassName="журнал_обладнанняRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
